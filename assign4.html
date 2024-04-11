@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        width: 50%;
+        height: 200px;
+        margin-top: 150px;
+        background-image: url(i.jpeg );
+        background-repeat: no-repeat;
+        background-size: 100%;
+      }
+      .head {
+        background-color: rgb(240, 118, 11);
+        border-radius: 3px;
+      }
+      .head1 {
+        background-color: rgb(91, 226, 91);
+        justify-content: left;
+        border-radius: 3px;
+      }
+      .space{
+        word-spacing: 90px;
+      }
+      .main{
+        display: flex;
+        justify-content: space-between;
+      }
+    
+    </style>
+  </head>
+  <body>
+    <fieldset style="background-color: white;"><div class="main">
+      <form>
+        <input
+          type="text"
+          value="PNR STATUS"
+          style="background-color: blue; color: beige"
+        />
+        <input
+          type="text"
+          value="CHARTS/VACANCY"
+          style="background-color: blue; color: beige"
+        />
+        <br />
+        <center><font size="8" style="color: blue"> BOOK TICKET</font></center>
+        <div class="main">
+        <div> From<br>
+        <input type="text" value="location" /> </div> <div>DD/MM/YYYYM<br> <input type="date" /></div></div>
+        <br /><br />
+        <div>
+        <input type="text" value="To" />
+        <select>
+          <option>All Classes</option>
+          <option>Anubhuti Class (EA)</option>
+          <option>AC First Class (1A)</option>
+          <option>Vistadome AC (EV)</option>
+          <option>Exec. Chair Car (EC)</option>
+          <option>Sleeper</option>
+        </select>
+        <br /><br />
+        <select>
+          <option>GENERAL</option>
+          <option>LADIES</option>
+          <option>LOWER BERTH/SR.CITIZEN</option>
+          <option>PERSON WITH DISABILITY</option>
+          <option>DUTY PASS</option>
+          <option>TATKAL</option>
+          <option>PREMIUM TATKAL</option>
+        </select>
+        <br /><br />
+        <input type="checkbox" />Person With Disability Concession &nbsp;<input
+          type="checkbox"
+        />Flexible With Date<br />
+        <input type="checkbox" /> Train with Available Berth &nbsp;
+        <input type="checkbox" /> Railway Pass Concession<br />
+        <br /><div class="main">
+        <button class="head">Search</button>&nbsp;&nbsp;
+        <button class="head1">Try booking in Ask DISHA 2.0</button></div>
+      </form>
+    </fieldset>
+    <!-- </div> -->
+  </body>
+</html>
