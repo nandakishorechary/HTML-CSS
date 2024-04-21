@@ -1,0 +1,94 @@
+body{
+    color: white;
+background-color: black;}
+hr{
+   border-width: 5px;
+   background-color: aliceblue;
+}
+    
+ .main1{
+    background-image: url(images/netflix.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 500vh;
+}
+.main2{
+    background-color: black;
+    height: 200vh;
+}
+.main3{
+    background-color: black;
+    height: 200vh;
+}
+.main4{
+    background-color: black;
+    height: 200vh;
+}
+.main5{
+    background-color: black;
+    height: 200vh;
+}
+.main7{
+    background-color: black;
+    height: 300vh;
+}
+.box1{
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    mix-blend-mode:normal;
+}
+.box2{
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    padding: 8px;
+}
+.box3{
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    font-style: bold;
+    text-align: center;
+    top: 35%;
+    left: 20%;
+}
+.box4{
+    position: absolute;
+color: white;
+font-size: 25px;
+font-style: bold;
+text-align: center;
+top:47%;
+left:38%;
+}
+.box5{
+    position: absolute;
+    color: white;
+    text-align: center;
+    font-style:normal;
+    font-size: 25px;
+    bottom: 35%;
+    left:25%;
+    font-weight: bold;
+}
+
+.box6{
+    position: absolute;
+    bottom: 27%;
+    left:40%;
+    right:30%;
+    padding: 30px;
+    width: 65%;
+}
+.main2 box7{
+    margin-top:500px;
+    margin-left:250px;
+}
+.main7 box9 ul{
+    display: inline-grid;
+    grid-gap: 26px 188px;
+    grid-template-columns: 105px 95px 110px 90px;
+    margin: 15px 0px;
+
+        }
