@@ -28,7 +28,7 @@
         let c = y3.value;
         if (a > b && a > c) {
           lbl2.innerHTML = `${a} is greater`;
-        } else if (b> a && b > c) {
+        } else if (b > a && b > c) {
           lbl2.innerHTML = `${b} is greater`;
         } else {
           lbl2.innerHTML = `${c} is greater`;
@@ -36,15 +36,50 @@
       }
       function f3(){
         let i=x.value;
-        i=0;
-        while(i<=25){
-            i+=5;
-            document.write(i);
+          i = 5;
+  while (i <= 25) {
+   document.write(i + " ");
+    i = i + 5;
+  }
+}
+function f4(){
+  let i =x.value;
+  i=1;
+  while (i <= 26) {
+    document.write(i + " ");
+    i += 5;
+  }
+}
+function fun16(){
+  let marks = b1.value;
+  if (marks >= 80) {
+          ipl.innerText = ` ${marks}  Grade-A`;
+        } else if (marks >= 60 && marks < 80) {
+          ipl.innerText = `${marks} Grade-B`;
+        } else if (marks >= 50 && marks < 60) {
+          ipl.innerText = `${marks} Grade-C`;
+        } else if (marks >= 45 && marks < 50 ) {
+          ipl.innerText = `${marks}  Grade-D`;
+        } else if (marks >= 25 && marks < 40) {
+          ipl.innerText = `${marks} Grade-E`;
+        } else if (marks < 25)  {
+          ipl.innerText = `${marks}  Grade-F`;
+        } else {
+          ipl.innerText = `${marks}not available`;
         }
       }
+function fun7(){
+  let a = s2.value;
+  if (a % 5 == 0) {
+    abc.innerHTML ="divisible  by 5";
+  } else {
+    abc.innerHTML = "Not Divisible by 5";
+  }
+}
     </script>
   </head>
   <body>
+    <h1> postive or negative</h1>
     <input
       type="text"
       id="s1"
@@ -56,11 +91,13 @@
     <label id="lbl"></label>
     <br />
     <br />
+    <h1> check whether square or not?</h1>
     <input type="text" id="x1" placeholder="enter the length" autofocus required/><br />
     <input type="text" id="x2" placeholder="enter the breadth"  autofocus required /><br />
     <button onclick="f2()">submit</button>
     <label id="lbl1"></label>
     <br /><br />
+    <h1> Gretest of three number</h1>
     <input
       type="text"
       id="y1"
@@ -73,8 +110,28 @@
     <button onclick="cli()">submit</button><br />
     <label id="lbl2"></label><br>
     <br>
-    <input type="text" id="x" placeholder="enter number"><br>
+    <h1> Series of five numbers</h1>
+    <input type="text" id="x" placeholder="enter number"  autofocus required><br>
     <button onclick="f3()">Submit</button>
+    <br>
+    <br>
+    <h1>printing the Series of number</h1>
+    <input type="text" id="x" placeholder="enter number"  autofocus required><br>
+    <button onclick="f4()">Submit</button>
+    <br>
+    <br>
+    <h1> Grades</h1>
+    <input
+      type="number" id="b1" placeholder="enter the number"  autofocus required
+    /><br />
+    <button onclick="fun16()">submit</button><br />
+    <label id="ipl"></label>
+    <br>
+    <br>
+    <h1> Divisible by 5</h1>
+    <input type="text" id="s2" placeholder="enter number "  autofocus required><br>
+    <button onclick="fun7()">submit</button><br>
+    <label id="abc"></label>
   </body>
 </html>
 <input
