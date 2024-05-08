@@ -6,13 +6,14 @@
     <title>Document</title>
   </head>
   <body>
+    <p>Wait 5 seconds for the message...</p>
+    <h2 id="demo"></h2>
     <script>
-      let name = "John";
-      console.log(name.toUpperCase())
-      console.log(name.toLowerCase())
-      console.log(name.indexOf("h"))
-      console.log(name.includes("o"))
-      console.log(name.slice(1,5))
+      function myfunc() {
+        let h = document.querySelector("#demo");
+        h.innerHTML = "Hello World";
+      }
+      setTimeout(myfunc,5000)
     </script>
   </body>
 </html>

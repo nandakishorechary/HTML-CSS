@@ -7,12 +7,16 @@
   </head>
   <body>
     <script>
-      let name = "John";
-      console.log(name.toUpperCase())
-      console.log(name.toLowerCase())
-      console.log(name.indexOf("h"))
-      console.log(name.includes("o"))
-      console.log(name.slice(1,5))
+      function a() {
+        document.write("Hello World");
+      }
+      function start(f) {
+        f();
+      }
+      function initialize(){
+        start(a)
+      }
+      initialize()
     </script>
   </body>
 </html>

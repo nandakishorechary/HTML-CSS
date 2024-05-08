@@ -6,13 +6,15 @@
     <title>Document</title>
   </head>
   <body>
+    <select id="s">
+
+    </select>
+
     <script>
-      let name = "John";
-      console.log(name.toUpperCase())
-      console.log(name.toLowerCase())
-      console.log(name.indexOf("h"))
-      console.log(name.includes("o"))
-      console.log(name.slice(1,5))
+        let fruits = ["Apple","Orange","Banana"]
+        for (let i=0;i<fruits.length;i++){
+            s.options[i] = new Option(fruits[i],fruits[i])
+        }
     </script>
   </body>
 </html>

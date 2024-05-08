@@ -6,13 +6,13 @@
     <title>Document</title>
   </head>
   <body>
-    <script>
-      let name = "John";
-      console.log(name.toUpperCase())
-      console.log(name.toLowerCase())
-      console.log(name.indexOf("h"))
-      console.log(name.includes("o"))
-      console.log(name.slice(1,5))
+    <script type="module">
+        // import add from "./calc.js"
+      import { add, subtract } from "./calc.js";
+      let sum = add(4, 5);
+      console.log(sum);
+      let sub = subtract(6,2)
+      console.log(sub)
     </script>
   </body>
 </html>
