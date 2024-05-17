@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div{
+            justify-content: center;
+            align-items: center;
+            height: 600px;
+            width:350px;
+        }
+        .box{
+        margin: top 50px;
+            display: flex;
+        }
+    </style>
+    <script>
+let n1=Math.floor(Math.random()*20);
+let n2=Math.floor(Math.random()*20);
+n1=document.getElementById("box1").value;
+n2=document.getElementById("box2").value;
+let add=n1+n2;
+function res(){
+    let result=document.getElementById("result").value;
+    if(result == add){
+      lbl.innerHTML="well done";
+    }
+    else{
+        lbl.innerHTML="try again";
+    }
+}
+    </script>
+</head>
+<body>
+    <h1>Maths quiz</h1>
+    <div>
+        <fieldset style=" height: 200px; width:350px;">
+            <div class="box">
+           <input type="text" id="box1">+
+           <input type="text" id="box2">
+           </div>
+           <br>
+          <center><input type="text" id="result"></center>
+           <br>
+          <center><input type="submit" id="check" value="submit" onclick="res()"></center>
+          <label id="lbl"></label>
+        </fieldset>
+    </div>
+</body>
+</html>
